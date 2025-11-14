@@ -1,9 +1,32 @@
 import React from 'react';
 import './App.css';
 import './styles/Professional.css';
+import { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    checkoutElements?: {
+      init: (type: 'salesFunnel' | string) => { mount: (selector: string) => void };
+    };
+  }
+}
 import './components/ModulesSection.css';
 
 function App() {
+  useEffect(() => {
+    const ce = window.checkoutElements;
+    if (ce) {
+      ce.init('salesFunnel').mount('#hotmart-sales-funnel');
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://checkout.hotmart.com/lib/hotmart-checkout-elements.js';
+    script.async = true;
+    script.onload = () => {
+      window.checkoutElements?.init('salesFunnel').mount('#hotmart-sales-funnel');
+    };
+    document.body.appendChild(script);
+  }, []);
   const modules = [
     {
       image: 'https://i.imgur.com/qZq1Kzm.png',
@@ -106,10 +129,7 @@ function App() {
             </div>
             
             <p>Es tu última oportunidad de tener todo esto por menos de un café.</p>
-            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="#" className="btn btn-primary btn-large animate-glow">💕 Sí, acepto por solo $4.90/mes</a>
-              <a href="#" className="btn btn-secondary btn-large">✨ Quiero todo por $4.90/mes</a>
-            </div>
+            <div id="hotmart-sales-funnel" style={{ maxWidth: '640px', margin: 'var(--spacing-lg) auto' }}></div>
           </div>
         </div>
       </section>
