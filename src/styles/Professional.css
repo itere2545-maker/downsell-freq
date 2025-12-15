@@ -372,6 +372,18 @@ body {
   color: var(--text-secondary);
 }
 
+.lead--highlight {
+  color: var(--text-primary);
+  font-weight: 800;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  box-shadow: var(--shadow-soft);
+}
+
 .pricing {
   display: flex;
   align-items: center;

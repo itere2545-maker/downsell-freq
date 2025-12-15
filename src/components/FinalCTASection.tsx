@@ -167,11 +167,10 @@ const FinalCTASection: React.FC = () => {
               </div>
 
               <div className="renewal-section">
-                <h4 className="renewal-title">🔄 Renovación opcional</h4>
-                <p className="renewal-text">Después de los 30 días incluidos, puedes seguir con el Chat Sofía por solo:</p>
-                <p className="renewal-price">👉 7,90 USD al mes</p>
-                <p className="renewal-note">(convertido automáticamente a la moneda de tu país)</p>
-                <p className="renewal-extra">Menos que una comida rápida… para tener apoyo emocional las 24 horas del día.</p>
+                <h4 className="renewal-title">🔒 Acceso vitalicio</h4>
+                <p className="renewal-text">Acceso vitalicio por 8,90 USD.</p>
+                <p className="renewal-price">👉 Pago único, sin cargos adicionales.</p>
+                <p className="renewal-note">Acceso para toda la vida.</p>
                 <div id="hotmart-sales-funnel"></div>
               </div>
             </div>

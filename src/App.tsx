@@ -49,7 +49,7 @@ function App() {
     <div className="App">
       <section className="section section-contrast">
         <div className="container text-center animate-fade-in-up stack gap-md">
-          <p className="lead">💔 Entiendo… quizá $7.90 no era para ti ahora.</p>
+          <p className="lead lead--highlight">💔 Entiendo… quizá $14,90 no era para ti ahora.</p>
           <p className="lead">Pero antes de que te vayas, quiero darte una última oportunidad</p>
           <p className="lead">que jamás volverá a aparecer.</p>
           <div className="card card-stack">
@@ -58,9 +58,9 @@ function App() {
             <p className="lead">Por una fracción del precio original.</p>
             <p className="lead">💖 TU NUEVO PRECIO HOY:</p>
             <div className="pricing">
-              <span className="price">Solo <strong>$4.90 USD al mes</strong></span>
+              <span className="price">Solo <strong>8,90 USD</strong> pago único</span>
             </div>
-            <p>(en lugar de $7.90)</p>
+            <p>Sin mensualidades ni cargos adicionales.</p>
             <p className="text-muted">Descuento inmediato por ser clienta de la Frecuencia del Reencuentro.</p>
           </div>
         </div>
@@ -123,8 +123,8 @@ function App() {
             <h2 className="section-title">💰 RESUMEN RÁPIDO</h2>
             <img src="https://i.imgur.com/e0xybSD.png" alt="Resumen visual" style={{ display: 'block', width: '100%', maxWidth: '560px', margin: 'var(--spacing-lg) auto', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 16px 40px rgba(0,0,0,0.35)' }} />
             <div className="section-subtitle stack">
-              <p>Chat Sofía 24/7 → <span className="text-magenta">$4.90/mes</span></p>
-              <p>Mentoría completa → <span className="text-success">GRATIS</span></p>
+              <p>Precio único → <span className="text-magenta">8,90 USD</span></p>
+              <p>Chat Sofía 24/7 – 30 días → <span className="text-success">INCLUIDO</span></p>
               <p>Acceso vitalicio al contenido → <span className="text-primary">INCLUIDO</span></p>
             </div>
             
@@ -140,7 +140,7 @@ function App() {
             <h2 className="section-title">⏳ IMPORTANTE</h2>
             <div className="section-subtitle stack">
               <p>Esta oferta solo existe en esta página.</p>
-              <p>Si sales, el precio vuelve a <span className="text-magenta">$7.90/mes</span> y pierdes la mentoría gratuita.</p>
+              <p>Si sales, la opción de acceso vitalicio por <span className="text-magenta">8,90 USD</span> puede no estar disponible.</p>
             </div>
           </div>
         </div>
@@ -149,9 +149,9 @@ function App() {
       <section className="section">
         <div className="container text-center">
           <div className="card animate-fade-in-up stack">
-            <h2 className="section-title">🔒 Garantía total de 30 días</h2>
+            <h2 className="section-title">🔒 GARANTÍA TOTAL DE 30 DÍAS</h2>
             <p className="section-subtitle">Si no sientes paz, claridad y control emocional, recuperas tu dinero sin preguntas.</p>
-            <a href="#" className="btn btn-primary btn-large">Acceso inmediato + 30 días incluidos</a>
+            <a href="#" className="btn btn-primary btn-large">ACCESO INMEDIATO • VITALICIO</a>
           </div>
         </div>
       </section>
